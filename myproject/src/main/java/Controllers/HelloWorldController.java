@@ -1,0 +1,10 @@
+package Controllers;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+public class HelloWorldController {
+ @GetMapping("/hello")
+ public String hello() {
+  return "Hello World!";
+ }
+}
